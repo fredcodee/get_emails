@@ -17,8 +17,8 @@ links = [n.get('href') for n in soup.find_all('a')]
 links.append(url)
 
 def get_emails(l):   
+    print("pls wait.... running code")
     for _link in l:
-        print("pls wait.... running code")
         if(_link.startswith("http") or _link.startswith("www")):
             data = requests.get(_link)
             _emails = re.findall(r'([\d\w\.]+@[\d\w\.\-]+\.\w+)', data.text)
