@@ -30,7 +30,7 @@ def get_emails(l):
 get_emails(links)  # run code to print out
 if len(mails) == 0:
     print("no emails found")
-    sleep(3)
+    sleep(5)
     exit()
 print(mails)
 
