@@ -1,5 +1,5 @@
-'''a simple python script to scrape emails from any website and other website linked to then saves in python list and prints out on terminal
-it prints out email found and website it was gotten from'''
+'''a simple python script to scrape emails from any website and other website linked to then  prints out on terminal emails found and website it was gotten from
+and also option to download and save as csv file'''
 
 import requests
 from bs4 import BeautifulSoup
@@ -7,7 +7,8 @@ import re
 import csv
 from time import sleep
 
-url = input("website:")
+print("email scraper by fredcode\nc'2019")
+url = input(" type a website:")
 mails = []
 
 response = requests.get(url)
@@ -34,7 +35,7 @@ if len(mails) == 0:
 print(mails)
 
 #extra feature  to save to a csv file
-ask_user = input("Do you want to save results to a csv file?\nReply with yes or no")
+ask_user = input("Do you want to save results to a csv file?\nReply with yes or no: ")
 u_data=ask_user.lower()
 
 if u_data == "yes":
@@ -55,4 +56,4 @@ else:
 
 
 
-'''coded by fredcode'''
+'''coded by fredcode - github[fredcodee]'''
