@@ -1,5 +1,5 @@
 '''a simple python script to scrape emails from any website and other website linked to then  prints out on terminal emails found and website it was gotten from
-and also option to download and save as csv file'''
+and also option to download and save as csv file '''
 
 import requests
 from bs4 import BeautifulSoup
